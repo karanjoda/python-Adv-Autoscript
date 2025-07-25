@@ -47,7 +47,7 @@ def setup(request):
 
     try:
         driver.set_page_load_timeout(10)
-        driver.get("http://172.31.52.38:9090")
+        driver.get("http://ipaddress")
     except Exception as e:
         logging.error(f"Page load timeout or navigation error: {e}")
 
